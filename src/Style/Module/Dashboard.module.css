@@ -1,0 +1,321 @@
+.dashboard {
+  background: linear-gradient(90deg, #2c3639d7 30%, #a27b5ce5);
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  padding: 20px 0;
+  padding-top: 8rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 18px;
+  color: #666;
+}
+
+/* Profile Section */
+.profileSection {
+  background-color: #fcfcfc;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profileHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profileImage {
+  margin-right: 20px;
+}
+
+.imagePlaceholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #dcd7c9;
+  border: 3px solid #2c3639;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #666;
+  font-weight: 500;
+}
+
+.profileInfo {
+  flex: 1;
+}
+
+.name {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #2c3639;
+  margin: 0 0 5px 0;
+}
+
+.email {
+  font-size: 16px;
+  color: #2c3639;
+  margin: 0;
+}
+
+.profileDetails {
+  margin-bottom: 30px;
+}
+
+.detailRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.detailRow:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #2c3639;
+  min-width: 120px;
+  margin-right: 20px;
+}
+
+.value {
+  font-size: 16px;
+  color: #3f4e4f;
+  flex: 1;
+}
+
+.input {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  flex: 1;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #3f4e4f;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+.editButton,
+.saveButton,
+.cancelButton {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.editButton {
+  background-color: #3f4e4f;
+  color: white;
+}
+
+.editButton:hover {
+  background-color: #5b7274;
+}
+
+.saveButton {
+  background-color: #28a745;
+  color: white;
+}
+
+.saveButton:hover {
+  background-color: #218838;
+}
+
+.cancelButton {
+  background-color: #dc3545;
+  color: white;
+}
+
+.cancelButton:hover {
+  background-color: #c82333;
+}
+
+/* Account Actions */
+.accountActions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.changePasswordButton,
+.logoutButton {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.changePasswordButton {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.changePasswordButton:hover {
+  background-color: #e0a800;
+}
+
+.logoutButton {
+  background-color: #dc3545;
+  color: white;
+}
+
+.logoutButton:hover {
+  background-color: #c82333;
+}
+
+/* Sections */
+.section {
+  background-color: #fcfcfc;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sectionTitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #2c3639;
+  margin: 0 0 20px 0;
+  border-bottom: 2px solid #2c3639;
+  padding-bottom: 10px;
+}
+
+.sectionContent {
+  color: #3f4e4f;
+}
+
+.placeholderText {
+  font-size: 16px;
+  margin: 0;
+  font-style: italic;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.box {
+  background-color: #fff;
+  border: 1px solid #e2e2e2;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.box h2 {
+  font-style: normal;
+  color: #333;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.box img {
+  height: 120px;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .profileSection,
+  .section {
+    padding: 20px;
+  }
+
+  .profileHeader {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profileImage {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .detailRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .label {
+    margin-bottom: 5px;
+    min-width: auto;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+  }
+
+  .accountActions {
+    flex-direction: column;
+  }
+
+  .editButton,
+  .saveButton,
+  .cancelButton,
+  .changePasswordButton,
+  .logoutButton {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .placeholderText {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .placeholderText {
+    grid-template-columns: 1fr;
+  }
+}
