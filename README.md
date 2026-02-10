@@ -1,7 +1,5 @@
 # QuizApp - Interactive Learning Platform
 
-![QuizApp Logo](./src/Assets/Icons/icon.png)
-
 A modern, responsive web application designed to provide an engaging and personalized learning experience through interactive quizzes and comprehensive course content. Built with React and powered by Firebase, QuizApp helps learners unlock their potential with adaptive learning technology.
 
 ## 🚀 Features
